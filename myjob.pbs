@@ -1,0 +1,7 @@
+#!/bin/bash
+#PBS -N abinit-test         
+#PBS -l nodes=node02:ppn=2+node03:ppn=2+node04:ppn=2+node05:ppn=2+node06:ppn=2
+#PBS -j oe                  
+#PBS -q zhuosuan        
+cd $PBS_O_WORKDIR
+mpiexec --host -n node02:2,node03:2,node04:2,node05:2,node06:2 singularity exec --writable -B /home/cy/chenyi/FullwaveReverse/spyro/paper:/home/firedrake/project forwardfwi3D_Brain.sif python /home/firedrake/project/run_forward_3d.py >test.txt
