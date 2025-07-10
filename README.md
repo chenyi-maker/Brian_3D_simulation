@@ -4,4 +4,4 @@ run_forward_3dnodes.py is the main program script for running 3D brain ultrasoun
 
 The "myjob.pbs" file is a script used for parallel computing on a computer cluster. You can submit computing tasks by using the command "qsub myjob.pbs". 
 
-The core code for calculation and the related environment configuration have been packaged into a Singularity image and uploaded. In the paper, the grid files and speed files used for calculation have also been uploaded. The corresponding files can be found by readers on the website 10.5281/zenodo.15836423.
+The core code for calculation and the related environment configuration have been packaged into a Singularity image and uploaded. In the paper, the grid files and speed files used for calculation have also been uploaded. The corresponding files can be found by readers on the website https://doi.org/10.5281/zenodo.15836423.
